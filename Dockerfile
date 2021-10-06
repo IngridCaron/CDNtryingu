@@ -10,3 +10,4 @@ RUN apt update && \
     git clone https://github.com/IngridCaron/CDNtryingu.git
 EXPOSE 8080
 RUN cd CDNtryingu && nohup http-server </dev/null &>/dev/null &
+RUN wget localhost:8080
