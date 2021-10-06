@@ -1,5 +1,6 @@
 # for railway deployment
 FROM ubuntu
+RUN apt install curl
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
 RUN apt install git -y
