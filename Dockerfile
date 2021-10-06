@@ -2,6 +2,7 @@
 FROM ubuntu
 RUN apt update && \
     apt install curl -y && \
+    apt install wget -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata && \
     apt install git -y && \ 
     apt install nodejs -y && \
