@@ -7,6 +7,4 @@ RUN apt install git -y
 RUN apt install nodejs -y
 RUN apt install npm -y
 RUN npm install --global http-server -y
-RUN git clone https://github.com/IngridCaron/CDNtryingu.git && cd CDNtryingu && ls && nohup http-server </dev/null &>/dev/null &
-RUN curl localhost:8080
-
+RUN git clone https://github.com/IngridCaron/CDNtryingu.git && cd CDNtryingu && ls && nohup http-server && curl localhost:8080
